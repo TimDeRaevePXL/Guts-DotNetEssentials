@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise06"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="620">
     <Grid>
+        <Canvas Name="paperCanvas" Margin="10,10,10,10">
+            <Rectangle Name="secondsRectangle" Height="50" Fill="Black" Stroke="Black" Canvas.Top="188" Width="600" MaxWidth="600" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Rectangle Name="minutesRectangle" Height="50" Fill="Black" Stroke="Black" Canvas.Top="88" Width="600" MaxWidth="600" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+        <Button Name="startButton" Content="Start Timer" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" Height="33" Width="88" Click="startButton_Click"/>
 
     </Grid>
 </Window>
